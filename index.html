@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cine de Verano</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <h1>🎬 Recomendaciones para tu Cine de Verano</h1>
+ <form id="movie-form">
+    <input type="text" id="title" placeholder="Título" required />
+    <input type="text" id="director" placeholder="Director" required />
+    <button type="submit">Añadir película</button>
+  </form>
+  <section id="movies-container"></section>
+  <script src="main.js"></script>
+  <script type="module" src="server/services.js"></script>
+</body>
+</html>
