@@ -1,0 +1,39 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "Volver",
+      "year": 2006,
+      "director": "Pedro Almodóvar",
+      "description": "Raimunda vive en Madrid con su familia mientras su hermana Sole trabaja como peluquera. Ambas extrañan a su madre, quien reaparece inesperadamente tras haber muerto en un incendio."
+    },
+    {
+      "id": "2",
+      "title": "This Is England",
+      "year": 2006,
+      "director": "Shane Meadows",
+      "description": "En el verano de 1983, Shaun, un niño solitario, se une a un grupo de skinheads y descubre la amistad, el amor y los conflictos dentro del grupo."
+    },
+    {
+      "id": "4",
+      "title": "La tortuga roja",
+      "year": 2016,
+      "director": "Michael Dudok de Wit",
+      "synopsis": "Un náufrago en una isla desierta vive las etapas de la vida humana en una historia sin diálogos producida junto a Studio Ghibli."
+    },
+    {
+      "id": "5",
+      "title": "¡Olvídate de mí!",
+      "year": 2004,
+      "director": "Michel Gondry",
+      "synopsis": "Joel intenta borrar los recuerdos de su ex, pero en el proceso revive su amor por ella y lucha contra el olvido."
+    },
+    {
+      "id": "6",
+      "title": "Love",
+      "year": 2015,
+      "director": "Gaspar Noé",
+      "synopsis": "Murphy revive su historia de amor más intensa con Electra tras una llamada inquietante sobre su desaparición."
+    }
+  ]
+}
