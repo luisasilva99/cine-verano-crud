@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Cine de Verano</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css" />
+    <title>Mis Películas Favoritas</title>
 </head>
 <body>
-  <h1>🎬 Recomendaciones para tu Cine de Verano</h1>
+    <h1>CINE DE VERANO</h1>
+    <h3>Añadir nueva película</h3>
+    <form id="add-movie-form">
+        <input type="text" id="title" placeholder="Título" required />
+        <input type="number" id="year" placeholder="Año" required />
+        <input type="text" id="director" placeholder="Director/a" required />
+        <textarea id="synopsis" placeholder="Sinopsis" required></textarea>
+        <button type="submit">Guardar película</button>
+    </form>
+    <button onclick="printMovies()">Cargar información</button>
+    <section id="movie-section"></section>
 
-  <h3>Añadir película</h3>
-  <form id="movie-form">
-    <input type="text" id="title" placeholder="Título" required />
-    <input type="text" id="director" placeholder="Director" required />
-    <textarea id="sypnosis" placeholder="Sinopsis" required></textarea>
-    <button type="submit">Añadir película</button>
-  </form>
+    <div id="edit-modal" class="modal" style="display:none;">
+      <div class="modal-content">
+        <h3>Editar Película</h3>
+        <form id="edit-form">
+            <input type="text" id="edit-title" placeholder="Título" required />
+            <input type="number" id="edit-year" placeholder="Año" required />
+            <input type="text" id="edit-director" placeholder="Director/a" required />
+            <textarea id="edit-synopsis" placeholder="Sinopsis" required></textarea>
+            <div class="modal-buttons">
+                <button type="submit">Guardar</button>
+                <button type="button" id="cancel-edit-btn">Cancelar</button>
+            </div>
+        </form>
+      </div>
+    </div>
 
-  <button onclick="printMovies()">Cargar información</button>
-  
-  <section id="movie-section"></section>
-
-  <script src="src/services.js"></script>
+    <script src="src/services.js"></script>
 </body>
 </html>
