@@ -133,6 +133,4 @@ window.addEventListener("click", (e) => {
         closeModal();
     }
 });
-window.addEventListener("DOMContentLoaded", () => {
-    printMovies();
-});
+document.getElementById("load-movies-btn").addEventListener("click", printMovies);
